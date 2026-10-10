@@ -1,0 +1,13 @@
+{
+  "name": "shangou-digital-store",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "npm run build --prefix apps/web",
+    "start": "npm run build && node apps/server/server.mjs",
+    "dev": "node --watch apps/server/server.mjs --dev-web",
+    "dev:web": "npm run dev --prefix apps/web"
+  },
+  "engines": { "node": ">=24.0.0" }
+}
